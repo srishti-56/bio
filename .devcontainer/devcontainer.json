@@ -1,0 +1,7 @@
+{
+
+    "extensions": [
+        "blackgirlbytes.deploy-to-github-pages",
+		"codespaces-contrib.codeswing"
+    ]
+}
