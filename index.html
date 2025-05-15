@@ -8,6 +8,7 @@
   
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
 	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -16,15 +17,29 @@
       <td style="padding:0px">
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr style="padding:0px">
+            <td style="padding:2.5%;width:40%;max-width:40%;">
+              <div class="profile-pic-container">
+                <a href="images/SrishtiMishra_circle_cropped.jpg" target="_blank">
+                  <img style="width:200px;height:200px;" alt="profile photo" src="images/SrishtiMishra_circle_cropped.jpg" class="hoverZoomLink" alt="A picture of Srishti, wearing a red t-shirt and smiling, with trees and hills in the background.">
+                </a>
+              </div>
+            </td>
             <td style="padding:2.5%;width:63%;vertical-align:middle">
               <p style="text-align:center">
                 <name>Srishti Mishra</name>
               </p>
-              <p> Working at Microsoft on the SeeingAI mobile app to build assistive technology on smartphones. 
+              <p>
+                <div class="mind-section">
+                  <strong>What's on my mind lately?</strong><br/>
+                  I'm especially interested in augmenting perception and meaning-making across sensory channels—through embodied interfaces, language, memory, and feedback loops that allow machines to feel less like tools and more like companions.
+                </div>
+              </p>
+              <p> Working on Responsible AI and Safety Systems at Microsoft. My recent work explores how AI systems perceive and respond with the physical world—ranging from multimodal assistants on smartphones to intelligent network device infrastructure. At Microsoft, I've contributed to SeeingAI, integrating LLMs and computer vision to support blind users through language-based scene understanding.
+                </p>
+                <p> In systems AI, I've developed <a href="https://www.microsoft.com/insidetrack/blog/responding-to-site-outages-at-microsoft-with-machine-learning-and-ai/" target="_blank"> intelligent AIOps platforms for Microsoft's global networks</a>, enabling real-time outage detection and self-healing via ML, and interned at Akamai  <a href="""https://peerj.com/preprints/27959/" target="_blank"> infer causal relationships between network performance degradation and metrics. </a>
               </p>
               <p>
-                I've worked on <a href="https://www.microsoft.com/insidetrack/blog/responding-to-site-outages-at-microsoft-with-machine-learning-and-ai/" target="_blank"> Intelligent Outage Detection, Auto-troubleshooting and Auto-correlation of incidents using machine learning </a> to power an AIOps monitoring solution for Microsoft's enterprise networks. 
-                During my internship at Akamai, I worked with the network performance optimization team, co-authored research to infer <a href="""https://peerj.com/preprints/27959/" target="_blank"> causal relationships between network performance degradation events and network metrics </a> and presented these in a set of troubleshooting tools (built in javascript & python) to help debug performance issues in the Akamai CDN.
+                Across these roles, I've co-authored internal applied research, shipped large-scale ML systems, and built nuanced evaluation frameworks that bridge user experience with model behavior. 
               </p>
               <p style="text-align:center">
                 <a href="mailto:srishtimishra56@gmail.com">Email</a> &nbsp/&nbsp
@@ -34,524 +49,277 @@
                 <a href="https://www.linkedin.com/in/srishti-mishra-3a1b69118/" target="_blank">LinkedIn</a>
               </p>
             </td>
-            <td style="padding:2.5%;width:40%;max-width:40%;">
-              <a href="images/SrishtiMishra_circle_cropped.jpg" target="_blank"><img style="width:100%;max-width:100%" alt="profile photo" src="images/SrishtiMishra_circle_cropped.jpg" class="hoverZoomLink" alt="A picture of Srishti, wearing a red t-shirt and smiling, with trees and hills in the background."></a>
-            </td>
           </tr>
         </tbody></table>
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-            <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading>Research</heading>
-              <p>
-                My research interests lie in machine intelligence and multi modal deep learning at the intersection of computer vision and natural language processing. 
-                I’ve worked with Dr. Dinkar Sitaram at the Centre for Cloud Computing & Big Data during my undergraduate studies at PES University on hierarchical learning approaches & machine learning on large-scale software systems.
-                I've also worked on projects with startups and as part of my coursework, in computer vision, transfer learning, intelligent edge, NLP, predictive machine learning and data science. 
-                <br> I hope to use this experience along with my work expertise in further research.
-                I draw inspiration from the future of science fiction to make it into an ethical reality today. <span alt="robot-emoji"> &#129302; </span>
-              </p>
-            </td>
-          </tr>
-        </tbody></table>
-      </body>
+        <!-- Focus Areas Section -->
+        <div class="cards-container">
+            <!-- Human Connection Section -->
+            <div class="section-container">
+                <div class="card" onclick="openModal('humanConnectionModal')">
+                    <div class="ui-overlay">
+                        <div class="ui-corner ui-corner-tl"></div>
+                        <div class="ui-corner ui-corner-tr"></div>
+                        <div class="ui-corner ui-corner-bl"></div>
+                        <div class="ui-corner ui-corner-br"></div>
+                    </div>
+                    <h2>Human Connection</h2>
+                    <p>Creating meaningful interactions through technology.</p>
+                </div>
+                <div class="circuit-pathway">
+                    <div class="circuit-line vertical"></div>
+                </div>
+                <div class="sub-cards-container">
+                    <div class="sub-card" onclick="openModal('humanConnectionModal1')">
+                        <h3>✨ Nudge - Quirky messages to stay in touch with friends</h3>
+                        <p>Click to view the virtual space</p>
+                    </div>
+                    <div class="sub-card" onclick="openModal('humanConnectionModal2')">
+                        <h3>🎧 Deepcuts: Share your favourite tunes with interactive audio notes</h3>
+                        <p>Click to explore the music experience</p>
+                    </div>
+                    <div class="sub-card" onclick="openModal('humanConnectionModal3')">
+                        <h3>🎒 Along the Way: A vibe-coded game around slow travel</h3>
+                        <p>Click to view the Instagram post</p>
+                    </div>
+                    <div class="sub-card" onclick="openModal('humanConnectionModal4')">
+                        <h3>🌱 Interactive Regenerative Agriculture from Farm to Cup</h3>
+                        <p>Click to explore the AR experience</p>
+                    </div>
+                </div>
+            </div>
 
-      <div style="position:fixed; bottom: 0;"> <p><a href="https://jonbarron.info/" target="_blank">Website Template</a> </p></div>
-        <!--
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <!-- AI Agents Section -->
+            <div class="section-container">
+                <div class="card" onclick="openModal('aiAgentsModal')">
+                    <div class="ui-overlay">
+                        <div class="ui-corner ui-corner-tl"></div>
+                        <div class="ui-corner ui-corner-tr"></div>
+                        <div class="ui-corner ui-corner-bl"></div>
+                        <div class="ui-corner ui-corner-br"></div>
+                    </div>
+                    <h2>AI, Agents and Beyond</h2>
+                    <p>Exploring the future of autonomous systems and intelligent automation.</p>
+                </div>
+                <div class="circuit-pathway">
+                    <div class="circuit-line vertical"></div>
+                </div>
+                <div class="sub-cards-container">
+                    <div class="sub-card" onclick="openModal('aiAgentsModal1')">
+                        <h3>📈 Data Engineering Toolkits using Agents and MCP</h3>
+                    </div>
+                    <div class="sub-card" onclick="openModal('aiAgentsModal2')">
+                        <h3>🤖 AIOps for Event Streams using Agents (Proposal)</h3>
+                        <p> Click to view more </p>
+                    </div>
+                    <div class="sub-card" onclick="openModal('aiAgentsModal4')">
+                        <h3>🛡️ E.C.S.T.A.T.I.C.S - A Computer Vision Startup: Enabling Civilian Security through Adaptive Tracking and Intelligent Computer Systems </h3>
+                        <p> Click to view more</p>
+                    </div>
+                </div>
+            </div>
 
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <img src='images/hierarchical-learning-network-analysis-graph.jpeg' width="160" alt="Network analysis consisting of several nodes and the interconnections between them.">
+            <!-- Assistive Technology Section -->
+            <div class="section-container">
+                <div class="card" onclick="openModal('assistiveTechModal')">
+                    <div class="ui-overlay">
+                        <div class="ui-corner ui-corner-tl"></div>
+                        <div class="ui-corner ui-corner-tr"></div>
+                        <div class="ui-corner ui-corner-bl"></div>
+                        <div class="ui-corner ui-corner-br"></div>
+                    </div>
+                    <h2>Assistive & Inclusive Technology</h2>
+                    <p>Building inclusive technology solutions that empower everyone.</p>
+                </div>
+                <div class="circuit-pathway">
+                    <div class="circuit-line vertical"></div>
+                </div>
+                <div class="sub-cards-container">
+                    <div class="sub-card" onclick="openModal('assistiveTechModal1')">
+                        <h3>🤖 SeeingAI: A visual assistant for the blind community on your smartphone camera</h3>
+                        <p> Click to explore the app </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Floating scroll indicator -->
+        <div class="scroll-indicator">↓</div>
+
+        <!-- Modals -->
+        <!-- AI Agents Modals -->
+        <div id="aiAgentsModal1" class="modal">
+            <div class="modal-content">
+                <span class="close-button" onclick="closeModal('aiAgentsModal1')">&times;</span>
+                <h2>Data Engineering Toolkits using Agents and MCP</h2>
+                <p>Coming soon...</p>
+            </div>
+        </div>
+
+        <div id="aiAgentsModal2" class="modal">
+            <div class="modal-content">
+                <span class="close-button" onclick="closeModal('aiAgentsModal2')">&times;</span>
+                <h2>🤖 AIOps for Event Streams using Agents (Proposal)</h2>
+                <p>Previous work – <a href="https://www.microsoft.com/insidetrack/blog/responding-to-site-outages-at-microsoft-with-machine-learning-and-ai/" target="_blank">Intelligent Outage Detection, Auto-troubleshooting and Auto-correlation of incidents using machine learning.</a></p>
+            </div>
+        </div>
+
+        <!-- Assistive Technology Modal -->
+        <div id="assistiveTechModal1" class="modal">
+            <div class="modal-content">
+                <span class="close-button" onclick="closeModal('assistiveTechModal1')">&times;</span>
+                <h2>🤖 SeeingAI: A visual assistant for the blind community on your smartphone camera</h2>
+                <div class="embed-wrapper" style="text-align:center;">
+                    <!-- LinkedIn post embed -->
+                    <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7067099317005660160" height="400" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+                    <br />
+                    <a href="https://www.seeingai.com/" target="_blank" class="experience-link">Visit SeeingAI Website</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Human Connection Modals -->
+        <div id="humanConnectionModal1" class="modal">
+            <div class="modal-content">
+                <span class="close-button" onclick="closeModal('humanConnectionModal1')">&times;</span>
+                <h2>Nudge - Quirky messages to stay in touch with friends</h2>
+                <a href="https://rooms.xyz/coffeeinspace/nudge-szn" target="_blank" class="experience-link">Go To Experience</a>
+                <div class="embed-wrapper">
+                    <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/reel/C9YUfJaSLGA/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+                        <!-- Instagram embed content -->
+                    </blockquote>
+                    <script async src="//www.instagram.com/embed.js"></script>
+                </div>
+            </div>
+        </div>
+
+        <div id="humanConnectionModal2" class="modal">
+            <div class="modal-content">
+                <span class="close-button" onclick="closeModal('humanConnectionModal2')">&times;</span>
+                <h2>Deepcuts: Share your favourite tunes with interactive audio notes</h2>
+                <div class="embed-wrapper">
+                    <iframe
+                        src="https://v0-retro-mixtape-website-psi.vercel.app/playground"
+                        width="800"
+                        height="600"
+                        style="border:none;"
+                        allowfullscreen
+                    ></iframe>
+                </div>
+            </div>
               </div>
               
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://arxiv.org/abs/2210.15030">
-                <papertitle>A Hierarchical Approach to Conditional Random Fields for System Anomaly Detection  </papertitle>
-              </a>
-              <br>
-              <strong> Srishti Mishra </strong>,
-              <a href="https://www.linkedin.com/in/tvarita-jain-181a5b12b/">Tvarita Jain</a>,
-							<a href="https://scholar.google.com/citations?user=1d9F_BoAAAAJ">Dinkar Sitaram</a>
-              <br>
-              <!- -
-              <em>arXiv</em>, Originally written in 2019
-              <br>
-              <a href="https://arxiv.org/abs/2210.15030">arXiv</a>
-              <p></p>
-              - ->
-              <p>
-                We compare hierarchical approaches to detect anomalies in system data; the changepoint-based PELT algorithm, cognitive-based HTM models, Support Vector Machines and Conditional Random Fields. And propose a Hierarchical Global-Local Conditional Random Field approach augmented by network analysis to accurately capture anomalies in complex systems across various features.
-              </p>
-            </td>
-          </tr>
-		  
-	
-          <tr onmouseout="samurai_stop()" onmouseover="samurai_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='samurai_image'>
-                  <img src='images/samurai_after.jpg' width="160"></div>
-                <img src='images/samurai_before.jpg' width="160">
-              </div>
-              <script type="text/javascript">
-                function samurai_start() {
-                  document.getElementById('samurai_image').style.opacity = "1";
-                }
+        <div id="humanConnectionModal3" class="modal">
+            <div class="modal-content">
+                <span class="close-button" onclick="closeModal('humanConnectionModal3')">&times;</span>
+                <h2>Along the Way: A vibe-coded game around slow travel</h2>
+                <div class="embed-wrapper">
+                    <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/reel/DAJj-T9ynFh/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+                        <div style="padding:16px;">
+                            <div style="display:block; height:50px; margin:0 auto 12px; width:50px;">
+                                <svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
+                                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                        <g transform="translate(-511.000000, -20.000000)" fill="#000000">
+                                            <g>
+                                                <path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div style="padding-top: 8px;">
+                                <div style="color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this post on Instagram</div>
+                            </div>
+                            <div style="padding: 12.5% 0;"></div>
+                            <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;">
+                                <div>
+                                    <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div>
+                                    <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div>
+                                    <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div>
+                                </div>
+                                <div style="margin-left: 8px;">
+                                    <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div>
+                                    <div style="width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div>
+                                </div>
+                                <div style="margin-left: auto;">
+                                    <div style="width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div>
+                                    <div style="background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div>
+                                    <div style="width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div>
+                                </div>
+                            </div>
+                            <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;">
+                                <div style="background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div>
+                                <div style="background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div>
+                            </div>
+                        </div>
+                        <p style="color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
+                            <a href="https://www.instagram.com/reel/DAJj-T9ynFh/?utm_source=ig_embed&amp;utm_campaign=loading" style="color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Srishti (@coffeeinspace.tech)</a>
+                        </p>
+                    </blockquote>
+                    <script async src="//www.instagram.com/embed.js"></script>
+                </div>
+            </div>
+        </div>
 
-                function samurai_stop() {
-                  document.getElementById('samurai_image').style.opacity = "0";
+        <div id="humanConnectionModal4" class="modal">
+            <div class="modal-content">
+                <span class="close-button" onclick="closeModal('humanConnectionModal4')">&times;</span>
+                <h2>Interactive Regenerative Agriculture from Farm to Cup</h2>
+                <div class="embed-wrapper" style="text-align:center;">
+                    <a href="https://8thwall.com/share/7g3we" target="_blank" class="experience-link">Go To AR Experience</a>
+                    <br />
+                    <a href="https://8thwall.com/share/7g3we" target="_blank">
+                        <img src="images/ar_coffee_screenshot.jpg" alt="AR Coffee Experience Screenshot" style="max-width:350px; width:100%; border-radius:12px; margin-bottom:1rem; box-shadow:0 0 12px #00ffff55; cursor:pointer; display:block; margin-left:auto; margin-right:auto;" />
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Add new modals for the new sub-cards -->
+        <div id="aiAgentsModal4" class="modal">
+            <div class="modal-content">
+                <span class="close-button" onclick="closeModal('aiAgentsModal4')">&times;</span>
+                <h2>🛡️ Previous work – E.C.S.T.A.T.I.C.S - A Computer Vision Startup: Enabling Civilian Security through Adaptive Tracking and Intelligent Computer Systems (Co-founder)</h2>
+                <p>Developed a real-time 'abandoned luggage' tracking solution for an autonomous network of surveillance camera systems at airports/stations using OpenCV and TinyYOLO models. Engineered a dynamic mesh network to alert security personnel through the closest node in the network.</p>
+                <p><strong>Longer explanation:</strong><br>
+                E.C.S.T.A.T.I.C.S (Enabling Civilian Security through Adaptive Tracking and Intelligent Computer Systems) was a computer vision startup I co-founded. We developed a real-time 'abandoned luggage' tracking solution for an autonomous network of surveillance camera systems at airports and stations, leveraging OpenCV and TinyYOLO models. The system could dynamically mesh network the cameras and alert security personnel through the closest node, enabling rapid response to potential threats and improving civilian safety in public spaces.</p>
+            </div>
+        </div>
+
+        <script>
+            // Modal functions
+            function openModal(modalId) {
+                document.getElementById(modalId).style.display = "block";
+            }
+
+            function closeModal(modalId) {
+                document.getElementById(modalId).style.display = "none";
+            }
+
+            // Close modal when clicking outside
+            window.onclick = function(event) {
+                if (event.target.classList.contains('modal')) {
+                    event.target.style.display = "none";
                 }
-                samurai_stop()
+            }
+
+            // Scroll indicator logic
+            const scrollIndicator = document.querySelector('.scroll-indicator');
+            
+            window.addEventListener('scroll', () => {
+                const scrollPosition = window.scrollY + window.innerHeight;
+                const documentHeight = document.documentElement.scrollHeight;
+                
+                if (scrollPosition >= documentHeight - 100) {
+                    scrollIndicator.classList.add('hidden');
+                } else {
+                    scrollIndicator.classList.remove('hidden');
+                }
+            });
               </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://addLink">
-                <papertitle>Effective City Planning</papertitle>
-              </a>
-              <br>
-              <a href="https://addLink">Person1</a>, 
-              <a href="">Person 2</a>, 
-              <br>
-              <em>arxiv</em>, Year
-              <br>
-              <a href="https://addLink">project page</a> /
-              <a href="https://addLink">video</a> /
-              <a href="https://addLink">arXiv</a>
-              <p></p>
-              <p>
-                Explanation
-              </p>
-            </td>
-          </tr>	
-
-        </tbody></table>
-
-			  <!- -	
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
-          <tr>
-            <td>
-              <heading>Misc</heading>
-            </td>
-          </tr>
-        </tbody></table>
-        <table width="100%" align="center" border="0" cellpadding="20"><tbody>
-					
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle"><img src="images/cvf.jpg"></td>
-            <td width="75%" valign="center">
-              <a href="https://addLink">Area Chair, CVPR 2022</a>
-              <br>
-              <a href="https://addLink">Stuff, CVPR 2021</a>
-              <br>
-              <a href="https://addLink">Stuff</a>
-              <br>
-              <a href="https://addLink">Stuff</a>
-            </td>
-          </tr>
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src="images/cs188.jpg" alt="cs188">
-            </td>
-            <td width="75%" valign="center">
-              <a href="https://addLink">Stuff</a>
-              <br>
-              <a href="https://addLink">Stuff Fall </a>
-              <br>
-              <a href="https://addLink">Figures, "Stuff"</a>
-            </td>
-          </tr>
-					
-
-          <tr>
-            <td align="center" style="padding:20px;width:25%;vertical-align:middle">
-							<heading>Basically <br> Blog Posts</heading>
-            </td>
-            <td width="75%" valign="middle">
-              <a href="https://addLink">HTM Overviewr</a>
-              <br>
-              <a href="https://addLink>Research paper blog thing</a>
-              <br>
-              <a href="https://addLink">idk</a>
-            </td>
-          </tr>
-					
-					
-        </tbody></table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
-            <td style="padding:0px">
-              <br>
-              <p style="text-align:right;font-size:small;">
-                Feel free to steal this website's <a href="https://github.com/jonbarron/jonbarron_website">source code</a>,
-                just add a link back to my website.
-                <strong>Do not</strong> scrape the HTML from the deployed instance of this website at http://jonbarron.info,
-                as it includes analytics tags that you do not want on your own website &mdash; use the github code instead.
-                If you'd like your new page linked to from here, submit a pull request adding yourself.
-                <a href="https://vjysd.github.io/">&#10025;</a>
-                <a href="https://www.amishmittal.com/">&#10025;</a>
-                <a href="https://rishabkhincha.github.io/">&#10025;</a>
-                <a href="https://yektademirci.com/">&#10025;</a>
-                <a href="https://yangyulin.github.io/">&#10025;</a>
-                <a href="https://www.cs.ubc.ca/~pbateni/">&#10025;</a>
-                <a href="https://aliosmanulusoy.github.io/">&#10025;</a>
-                <a href="https://cs.stanford.edu/~poole/">&#10025;</a>
-                <a href="http://www.cs.berkeley.edu/~akar/">&#10025;</a>
-                <a href="http://www.eecs.berkeley.edu/~biancolin">&#10025;</a>
-                <a href="http://www.rossgirshick.info/">&#10025;</a>
-                <a href="http://www.cs.cmu.edu/~igkioule/">&#10025;</a>
-                <a href="http://kelvinxu.github.io/">&#10025;</a>
-                <a href="http://imagine.enpc.fr/~groueixt/">&#10025;</a>
-                <a href="https://people.eecs.berkeley.edu/~cbfinn/">&#10025;</a>
-                <a href="http://disi.unitn.it/~nabi/">&#10025;</a>
-                <a href="http://changyeobshin.com/">&#10025;</a>
-                <a href="https://mbanani.github.io/">&#10025;</a>
-                <a href="https://aseembits93.github.io">&#10025;</a>
-                <a href="http://fuwei.us/">&#10025;</a>
-                <a href="http://www-bcf.usc.edu/~iacopoma/">&#10025;</a>
-                <a href="https://lorisbaz.github.io/">&#10025;</a>
-                <a href="https://dplarson.info/">&#10025;</a>
-                <a href="http://chapiro.net/">&#10025;</a>
-                <a href="https://people.eecs.berkeley.edu/~vitchyr/">&#10025;</a>
-                <a href="https://people.eecs.berkeley.edu/~kellman/">&#10025;</a>
-                <a href="http://www0.cs.ucl.ac.uk/staff/C.Godard/">&#10025;</a>
-                <a href="http://www.cs.toronto.edu/~byang/">&#10025;</a>
-                <a href="http://people.kyb.tuebingen.mpg.de/harmeling/">&#10025;</a>
-                <a href="https://prakashmurali.bitbucket.io/">&#10025;</a>
-                <a href="http://www.cs.bham.ac.uk/~exa371/">&#10025;</a>
-                <a href="http://prosello.com/">&#10025;</a>
-                <a href="http://www.ee.ucr.edu/~nmithun/">&#10025;</a>
-                <a href="https://rmullapudi.bitbucket.io/">&#10025;</a>
-                <a href="http://www.briangauch.com/">&#10025;</a>
-                <a href="https://people.eecs.berkeley.edu/~coline/">&#10025;</a>
-                <a href="https://www.andrew.cmu.edu/user/sjayasur/website.html">&#10025;</a>
-                <a href="http://www.eecs.berkeley.edu/~rakelly/">&#10025;</a>
-                <a href="https://gkioxari.github.io/">&#10025;</a>
-                <a href="http://ai.stanford.edu/~hsong/">&#10025;</a>
-                <a href="http://www.ee.ucr.edu/~mbappy/">&#10025;</a>
-                <a href="http://adithyamurali.com/">&#10025;</a>
-                <a href="https://people.eecs.berkeley.edu/~khoury/">&#10025;</a>
-                <a href="https://prashanthtk.github.io/">&#10025;</a>
-                <a href="http://tomhenighan.com/">&#10025;</a>
-                <a href="http://mbchang.github.io/">&#10025;</a>
-                <a href="https://people.eecs.berkeley.edu/~haarnoja/">&#10025;</a>
-                <a href="http://web.stanford.edu/~sfort1/">&#10025;</a>
-                <a href="http://www.arkin.xyz/">&#10025;</a>
-                <a href="http://i-am-karan-singh.github.io/">&#10025;</a>
-                <a href="https://pxlong.github.io/">&#10025;</a>
-                <a href="https://dheeraj2444.github.io/">&#10025;</a>
-                <a href="https://fabienbaradel.github.io/">&#10025;</a>
-                <a href="https://ankitdhall.github.io/">&#10025;</a>
-                <a href="http://nafiz.ml/">&#10025;</a>
-                <a href="http://www.cs.cmu.edu/~aayushb">&#10025;</a>
-                <a href="http://bjornstenger.github.io/">&#10025;</a>
-                <a href="http://users.eecs.northwestern.edu/~mif365/">&#10025;</a>
-                <a href="https://www.macs.hw.ac.uk/~ic14/">&#10025;</a>
-                <a href="https://ai.stanford.edu/~kaidicao/">&#10025;</a>
-                <a href="http://hengfan.byethost7.com/">&#10025;</a>
-                <a href="https://reyhaneaskari.github.io/">&#10025;</a>
-                <a href="https://tianheyu927.github.io/">&#10025;</a>
-                <a href="http://people.csail.mit.edu/janner/">&#10025;</a>
-                <a href="http://www.sjoerdvansteenkiste.com/">&#10025;</a>
-                <a href="http://joaoloula.github.io/">&#10025;</a>
-                <a href="https://bhairavmehta95.github.io/">&#10025;</a>
-                <a href="https://palmieri.github.io/">&#10025;</a>
-                <a href="https://psuriana.github.io/">&#10025;</a>
-                <a href="http://yushi2.web.engr.illinois.edu/">&#10025;</a>
-                <a href="http://ruthcfong.github.io/">&#10025;</a>
-                <a href="https://shraman-rc.github.io/">&#10025;</a>
-                <a href="http://rahulgarg.com/">&#10025;</a>
-                <a href="http://www.cs.cmu.edu/~inigam/">&#10025;</a>
-                <a href="http://djstrouse.com/">&#10025;</a>
-                <a href="https://lekhamohan.github.io/">&#10025;</a>
-                <a href="https://avijit9.github.io/">&#10025;</a>
-                <a href="http://www.seas.ucla.edu/~sahba/">&#10025;</a>
-                <a href="https://pages.jh.edu/~falambe1/">&#10025;</a>
-                <a href="http://www.dcc.fc.up.pt/~vitor.cerqueira/">&#10025;</a>
-                <a href="https://bmild.github.io/">&#10025;</a>
-                <a href="https://web.eecs.umich.edu/~subh/">&#10025;</a>
-                <a href="http://www.cs.utexas.edu/~pgoyal/">&#10025;</a>
-                <a href="http://www.eecs.wsu.edu/~fchowdhu/">&#10025;</a>
-                <a href="https://aarzchan.github.io/">&#10025;</a>
-                <a href="https://www.seas.upenn.edu/~oleh/">&#10025;</a>
-                <a href="http://shamak.github.io/">&#10025;</a>
-                <a href="http://jianfeng.us/">&#10025;</a>
-                <a href="https://pulkitkumar95.github.io/">&#10025;</a>
-                <a href="https://epiception.github.io/">&#10025;</a>
-                <a href="https://weimengpu.github.io/">&#10025;</a>
-                <a href="http://users.ices.utexas.edu/~faraz/">&#10025;</a>
-                <a href="https://vitorgodeiro.github.io/">&#10025;</a>
-                <a href="http://cgm.technion.ac.il/people/Roey/">&#10025;</a>
-                <a href="https://mancinimassimiliano.github.io/">&#10025;</a>
-                <a href="https://roshanjrajan.me/">&#10025;</a>
-                <a href="http://irc.cs.sdu.edu.cn/~qingnan/">&#10025;</a>
-                <a href="http://individual.utoronto.ca/yuenj/">&#10025;</a>
-                <a href="https://akhileshgotmare.github.io/">&#10025;</a>
-                <a href="http://vllab.ucmerced.edu/nakul/">&#10025;</a>
-                <a href="https://hasibzunair.github.io/">&#10025;</a>
-                <a href="http://dalezhou.com/">&#10025;</a>
-                <a href="https://abhoi.github.io/">&#10025;</a>
-                <a href="https://www.cse.unr.edu/~jyi/">&#10025;</a>
-                <a href="http://www.liuzhaolun.com/">&#10025;</a>
-                <a href="https://abhisheknaik.me/">&#10025;</a>
-                <a href="https://cfernandezlab.github.io/">&#10025;</a>
-                <a href="https://aasharma90.github.io/">&#10025;</a>
-                <a href="https://kdizon.github.io/">&#10025;</a>
-                <a href="https://www.cse.wustl.edu/~zhihao.xia/">&#10025;</a>
-                <a href="http://mmozes.net/">&#10025;</a>
-                <a href="https://kpertsch.github.io/">&#10025;</a>
-                <a href="http://xiatianpei.com/">&#10025;</a>
-                <a href="https://nsrishankar.github.io/">&#10025;</a>
-                <a href="http://xujuefei.com/">&#10025;</a>
-                <a href="https://www.cs.rochester.edu/u/lchen63/">&#10025;</a>
-                <a href="http://deyachatterjee.github.io/">&#10025;</a>
-                <a href="http://hossein1387.github.io/index.html">&#10025;</a>
-                <a href="https://zx007zls.github.io/">&#10025;</a>
-                <a href="http://people.eecs.berkeley.edu/~nol/">&#10025;</a>
-                <a href="http://www.cs.princeton.edu/~jw60/">&#10025;</a>
-                <a href="https://cseweb.ucsd.edu/~owen/">&#10025;</a>
-                <a href="https://subhajitchaudhury.github.io/">&#10025;</a>
-                <a href="https://sandarshp.github.io/">&#10025;</a>
-                <a href="https://medhini.github.io/">&#10025;</a>
-                <a href="http://cindyxinyiwang.github.io/">&#10025;</a>
-                <a href="https://lasirenashann.github.io/">&#10025;</a>
-                <a href="http://ambuj.se/">&#10025;</a>
-                <a href="http://kylehsu.me/">&#10025;</a>
-                <a href="https://ujjwal95.github.io/">&#10025;</a>
-                <a href="https://aditya5558.github.io/">&#10025;</a>
-                <a href="http://www.majumderb.com/">&#10025;</a>
-                <a href="http://ylqiao.net/">&#10025;</a>
-                <a href="https://xiaochunliu.github.io/">&#10025;</a>
-                <a href="https://dhawgupta.github.io/">&#10025;</a>
-                <a href="http://cliu.info/">&#10025;</a>
-                <a href="https://taochenshh.github.io/">&#10025;</a>
-                <a href="http://www-scf.usc.edu/~ayushj/">&#10025;</a>
-                <a href="https://zexuehe.github.io/">&#10025;</a>
-                <a href="https://ofkar.github.io/">&#10025;</a>
-                <a href="https://amir-arsalan.github.io/">&#10025;</a>
-                <a href="https://vinamrabenara.github.io/">&#10025;</a>
-                <a href="https://likojack.bitbucket.io/">&#10025;</a>
-                <a href="http://www-personal.umich.edu/~zeyu/">&#10025;</a>
-                <a href="https://utkarshojha.github.io/">&#10025;</a>
-                <a href="https://fahmidmorshed.github.io/">&#10025;</a>
-                <a href="https://www.cs.ubc.ca/~setarehc/">&#10025;</a>
-                <a href="http://viveksolanki.com/">&#10025;</a>
-                <a href="http://webdiis.unizar.es/~alcolea/">&#10025;</a>
-                <a href="http://www.songyaojiang.com/">&#10025;</a>
-                <a href="https://www.csee.umbc.edu/~bhp1/">&#10025;</a>
-                <a href="http://acl.mit.edu/people">&#10025;</a>
-                <a href="https://vignanv.com/">&#10025;</a>
-                <a href="https://liuyicun.me/">&#10025;</a>
-                <a href="https://heyuanmingong.github.io/">&#10025;</a>
-                <a href="https://abhishekaich27.github.io/">&#10025;</a>
-                <a href="https://www.cs.ubc.ca/~saeidnp/">&#10025;</a>
-                <a href="https://uuujf.github.io/">&#10025;</a>
-                <a href="https://csjcai.github.io/">&#10025;</a>
-                <a href="https://iphyer.github.io/Mingren_Website/">&#10025;</a>
-                <a href="https://binzhubz.github.io/">&#10025;</a>
-                <a href="https://steinar.dev/">&#10025;</a>
-                <a href="https://tnq177.github.io/">&#10025;</a>
-                <a href="https://jonathan-schwarz.github.io/">&#10025;</a>
-                <a href="http://www.ronnieclark.co.uk/">&#10025;</a>
-                <a href="http://www.aparnadhinakaran.com/">&#10025;</a>
-                <a href="https://zjysteven.github.io/">&#10025;</a>
-                <a href="http://aakash30jan.github.io/">&#10025;</a>
-                <a href="https://people.eecs.berkeley.edu/~shelhamer/">&#10025;</a>
-                <a href="https://junaidcs032.github.io/">&#10025;</a>
-                <a href="https://liangxuy.github.io/">&#10025;</a>
-                <a href="http://www.public.asu.edu/~ssarka18/">&#10025;</a>
-                <a href="https://www.cs.toronto.edu/~jennachoi/">&#10025;</a>
-                <a href="https://amankhullar.github.io/">&#10025;</a>
-                <a href="https://vijayvee.github.io/">&#10025;</a>
-                <a href="https://anmolgoel.dev/">&#10025;</a>
-                <a href="https://chanh.ee/">&#10025;</a>
-                <a href="https://jefflai108.github.io/">&#10025;</a>
-                <a href="https://pvskand.github.io/">&#10025;</a>
-                <a href="https://ariostgx.github.io/website/">&#10025;</a>
-                <a href="https://www.cs.utexas.edu/~shreyd/">&#10025;</a>
-                <a href="https://www.cedrick.ai/">&#10025;</a>
-                <a href="https://onlytailei.github.io/">&#10025;</a>
-                <a href="https://people.cs.vt.edu/liminyang/">&#10025;</a>
-                <a href="https://alexander-kirillov.github.io/">&#10025;</a>
-                <a href="https://sites.cs.ucsb.edu/~yanju/">&#10025;</a>
-                <a href="https://www.cct.lsu.edu/~cliu/">&#10025;</a>
-                <a href="https://sid2697.github.io/">&#10025;</a>
-                <a href="https://brendonjeromebutler.com/">&#10025;</a>
-                <a href="https://bthananjeyan.github.io/">&#10025;</a>
-                <a href="https://leonidk.com/">&#10025;</a>
-                <a href="http://bopeng.space/">&#10025;</a>
-                <a href="https://gautamigolani.github.io/">&#10025;</a>
-                <a href="https://rohitrango.github.io/">&#10025;</a>
-                <a href="https://prithv1.github.io/">&#10025;</a>
-                <a href="https://www.idiap.ch/~tpereira/">&#10025;</a>
-                <a href="https://felipefelixarias.github.io/">&#10025;</a>
-                <a href="https://sophieschau.github.io/">&#10025;</a>
-                <a href="https://wensun.github.io/">&#10025;</a>
-                <a href="http://cs.umanitoba.ca/~kumarkm/">&#10025;</a>
-                <a href="https://sourav-roni.github.io/">&#10025;</a>
-                <a href="https://parskatt.github.io/">&#10025;</a>
-                <a href="https://rauldiaz.github.io/">&#10025;</a>
-                <a href="https://uzeful.github.io/">&#10025;</a>
-                <a href="https://roeiherz.github.io/">&#10025;</a>
-                <a href="http://relh.net/">&#10025;</a>
-                <a href="https://ars-ashuha.ru/">&#10025;</a>
-                <a href="https://prieuredesion.github.io/">&#10025;</a>
-                <a href="https://tsujuifu.github.io/">&#10025;</a>
-                <a href="https://pranoy-k.github.io/website/">&#10025;</a>
-                <a href="https://xiaoleiz.github.io/">&#10025;</a>
-                <a href="https://users.ece.cmu.edu/~bahn/">&#10025;</a>
-                <a href="http://eracah.github.io/">&#10025;</a>
-                <a href="https://adityakusupati.github.io/">&#10025;</a>
-                <a href="https://agadetsky.github.io/">&#10025;</a>
-                <a href="https://coh1211.github.io/">&#10025;</a>
-                <a href="https://people.eecs.berkeley.edu/~kevinlin/">&#10025;</a>
-                <a href="https://bucherb.github.io/">&#10025;</a>
-                <a href="https://naman-ntc.github.io/">&#10025;</a>
-                <a href="https://nicolay-r.github.io/">&#10025;</a>
-                <a href="https://sakshambassi.github.io/">&#10025;</a>
-                <a href="https://maheshmohanmr.github.io/publications/">&#10025;</a>
-                <a href="http://byang.org/">&#10025;</a>
-                <a href="https://sylqiu.github.io/">&#10025;</a>
-                <a href="https://www.cc.gatech.edu/~sfoley30/">&#10025;</a>
-                <a href="https://crockwell.github.io/">&#10025;</a>
-                <a href="https://kritikalcoder.github.io/">&#10025;</a>
-                <a href="https://isrugeek.github.io/">&#10025;</a>
-                <a href="https://wei-ying.net/">&#10025;</a>
-                <a href="http://people.csail.mit.edu/liuyingcheng/">&#10025;</a>
-                <a href="https://itsreddy.github.io/">&#10025;</a>
-                <a href="https://aditimavalankar.github.io">&#10025;</a>
-                <a href="https://www.cs.ubc.ca/~zhenanf/">&#10025;</a>
-                <a href="https://trinkle23897.github.io/cv/">&#10025;</a>
-                <a href="https://tgangwani.github.io/">&#10025;</a>
-                <a href="https://hannahlawrence.github.io/">&#10025;</a>
-                <a href="http://bingxu.tech/">&#10025;</a>
-                <a href="http://apjacob.me/">&#10025;</a>
-                <a href="https://www.ee.iitb.ac.in/student/~krishnasubramani/">&#10025;</a>
-                <a href="https://gowthamkuntumalla.github.io/">&#10025;</a>
-                <a href="https://dkkim93.github.io/">&#10025;</a>
-                <a href="https://chaitanyamalaviya.github.io/">&#10025;</a>
-                <a href="https://daochenw.github.io/">&#10025;</a>
-                <a href="https://acvictor.github.io/">&#10025;</a>
-                <a href="https://tarund1996.github.io/">&#10025;</a>
-                <a href="http://www-personal.umich.edu/~belz/">&#10025;</a>
-                <a href="http://lauredelisle.com/">&#10025;</a>
-                <a href="https://tsly123.github.io/">&#10025;</a>
-                <a href="https://vanditg.github.io/">&#10025;</a>
-                <a href="https://nhoma.github.io/">&#10025;</a>
-                <a href="http://www.pedro.opinheiro.com/">&#10025;</a>
-                <a href="https://suvan.sh/">&#10025;</a>
-                <a href="https://www.diptanu.com/">&#10025;</a>
-                <a href="https://yimengli46.github.io/">&#10025;</a>
-                <a href="https://gauravparmar.com/">&#10025;</a>
-                <a href="https://cchoquette.github.io/">&#10025;</a>
-                <a href="https://psyche-mia.github.io/">&#10025;</a>
-                <a href="https://mvp18.github.io/">&#10025;</a>
-                <a href="https://markfzp.github.io/">&#10025;</a>
-                <a href="https://theultramarine19.github.io/">&#10025;</a>
-                <a href="https://sairajk.github.io/">&#10025;</a>
-                <a href="https://paritoshparmar.github.io/">&#10025;</a>
-                <a href="https://purvak-l.github.io/">&#10025;</a>
-                <a href="https://davideabati.info/">&#10025;</a>
-                <a href="https://ethanperez.net/">&#10025;</a>
-                <a href="http://mdai.me/">&#10025;</a>
-                <a href="https://nitish-nagesh.github.io/">&#10025;</a>
-                <a href="https://duroz.github.io/">&#10025;</a>
-                <a href="http://people.uncw.edu/dogang/">&#10025;</a>
-                <a href="http://hal9000.space">&#10025;</a>
-                <a href="http://web.stanford.edu/~yjiang05/">&#10025;</a>
-                <a href="https://pratulsrinivasan.github.io/">&#10025;</a>
-                <a href="http://linuxdeveloper.io">&#10025;</a>
-                <a href="http://umiacs.umd.edu/~kdbrant">&#10025;</a>
-                <a href="https://adityassrana.github.io/blog/about">&#10025;</a>
-                <a href="https://mpalrocks.github.io/">&#10025;</a>
-                <a href="https://victor7246.github.io/">&#10025;</a>
-                <a href="https://www.haozhu-wang.com/">&#10025;</a>
-                <a href="https://rajatjaiswal.me/">&#10025;</a>
-                <a href="https://senya-ashukha.github.io/">&#10025;</a>
-                <a href="https://qiminchen.github.io/">&#10025;</a>
-                <a href="https://mark12ding.github.io/">&#10025;</a>
-                <a href="https://zsb87.github.io/">&#10025;</a>
-                <a href="https://yashbhalgat.github.io/">&#10025;</a>
-                <a href="https://r0cketr1kky.github.io/">&#10025;</a>
-                <a href="https://jaydeepborkar.github.io/">&#10025;</a>
-                <a href="https://lidq92.github.io/">&#10025;</a>
-                <a href="https://statho.github.io/">&#10025;</a>
-                <a href="https://ankit-kaul.github.io/">&#10025;</a>
-                <a href="https://jlidard.github.io/">&#10025;</a>
-                <a href="http://harshpanwar.me/">&#10025;</a>
-                <a href="https://c0ldstudy.github.io/about/">&#10025;</a>
-                <a href="https://pro-vider.github.io/personal-website/">&#10025;</a>
-                <a href="http://avinashpaliwal.com/">&#10025;</a>
-                <a href="https://soham-official.github.io/portfolio/">&#10025;</a>
-                <a href="https://cdmdc.github.io/">&#10025;</a>
-                <a href="http://www.wisdom.weizmann.ac.il/~/assafsho/">&#10025;</a>
-                <a href="https://yotamnitzan.github.io/">&#10025;</a>
-                <a href="https://www.zijianwang.me/">&#10025;</a>
-                <a href="https://people.rit.edu/hv8322/">&#10025;</a>
-                <a href="https://ilyac.info/">&#10025;</a>
-                <a href="https://tamarott.github.io/">&#10025;</a>
-                <a href="https://www.cmlab.csie.ntu.edu.tw/~yulunliu/">&#10025;</a>
-                <a href="https://stanford.edu/~amywang1/">&#10025;</a>
-                <a href="https://g1910.github.io/">&#10025;</a>
-                <a href="http://ozzie00.github.io/">&#10025;</a>
-                <a href="http://xiomarag.github.io">&#10025;</a>
-                <a href="http://plalsanjay.github.io">&#10025;</a>
-                <a href="https://vr25.github.io/">&#10025;</a>
-                <a href="https://vishal-keshav.github.io">&#10025;</a>
-                <a href="https://zhihualiued.github.io">&#10025;</a>
-                <a href="https://lczong.github.io/">&#10025;</a>
-                <a href="https://timkimd.github.io/">&#10025;</a>
-                <a href="https://hyekangjoo.github.io/">&#10025;</a>
-                <a href="https://nivha.github.io/">&#10025;</a>
-                <a href="https://litun5315.github.io/">&#10025;</a>
-                <a href="https://pursuerchen.github.io/">&#10025;</a>
-                <a href="https://shubhamdongriyal.github.io/Homepage/">&#10025;</a>
-                <a href="https://digantamisra98.github.io/">&#10025;</a>
-                <a href="https://zhunzhong.com/">&#10025;</a>
-                <a href="https://web.mit.edu/bauza/www/">&#10025;</a>
-                <a href="https://shjung13.github.io">&#10025;</a>
-                <a href="https://analogicalnexus.github.io">&#10025;</a>
-                <a href="http://yjzheng.com">&#10025;</a>
-                <a href="http://kiranramnath007.github.io">&#10025;</a>
-                <a href="https://fdlandi.github.io/">&#10025;</a>
-                <a href="https://sherrycattt.github.io/">&#10025;</a>
-                <a href="http://petersen.ai">&#10025;</a>
-                <a href="https://habibslim.github.io/">&#10025;</a>
-                <a href="https://rsk97.github.io/">&#10025;</a>
-                <a href="https://leoshine.github.io/">&#10025;</a>
-                <a href="https://pierbeneventano.github.io/">&#10025;</a>
-                <a href="https://tonmoay.de/">&#10025;</a>
-                <a href="https://hsjang.com/">&#10025;</a>
-                <a href="http://alexanderli.com/">&#10025;</a>		      
-                <a href="https://gabeur.github.io/">&#10025;</a>
-                <a href="https://asaran.github.io/">&#10025;</a>
-                <a href="https://stevejayh.github.io/">&#10025;</a>
-                <a href="https://atfortes.github.io/">&#10025;</a>
-                <a href="https://alexj94.github.io/">&#10025;</a>
-                <a href="https://jiaxiaosong1002.github.io/">&#10025;</a>
-                <a href="https://imethanlee.github.io/">&#10025;</a>
-                <a href="https://mirmix.github.io/">&#10025;</a>
-                <a href="http://jiayisu.com/">&#10025;</a>
-                <a href="http://phamtrongthang123.github.io/">&#10025;</a>
-                <a href="https://ahupujr.github.io/">&#10025;</a>
-                <a href="https://rajatbh21.github.io/">&#10025;</a>
-                <a href="https://tanushreebanerjee.github.io/">&#10025;</a>
-                <a href="https://peyajm.github.io/">&#10025;</a>
-                <a href="https://vsimkus.github.io/">&#10025;</a>
-                <a href="https://www.cse.iitb.ac.in/~ankitkmisra/">&#10025;</a>
-                <br>
-                Also, consider using <a href="https://leonidk.com/">Leonid Keselman</a>'s <a href="https://github.com/leonidk/new_website">Jekyll fork</a> of this page.
-              </p>
-            </td>
-          </tr>
-        </tbody></table>
       </td>
     </tr>
-
--->
-</table>
+  </tbody></table>
 </body>
 
 </html>
